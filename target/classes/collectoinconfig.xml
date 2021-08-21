@@ -1,0 +1,77 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="com.springcore.collections.Emp" name="emp1">
+        <property name="name" value="Don" />
+
+        <property name="phones">
+            <list>
+                <value>0172032</value>
+                <value>0172456</value>
+                <value>0172156</value>
+            </list>
+        </property>
+
+        <property name="address">
+            <set>
+                <value>Rangpur</value>
+                <value>Dhaka</value>
+                <value>Rajshahi</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="java" value="2months" />
+                <entry key="python" value="1.2months" />
+                <entry key="c" value="1months" />
+            </map>
+        </property>
+
+        <property name="props">
+            <props>
+                <prop key="name">Ashikur Rahman Rashid</prop>
+                <prop key="designation" >Developer</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
